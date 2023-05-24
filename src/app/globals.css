@@ -14,6 +14,6 @@ body {
 }
 
 @font-face {
-  font-family: "burtons";
-  src: url('/react-portfolio/src/public/Burtons.otf');
+  font-family: 'burtons';
+  src: '/react-portfolio/src/public/Burtons.otf';
 }

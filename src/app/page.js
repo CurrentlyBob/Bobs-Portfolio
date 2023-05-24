@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
-
 export default function Home() {
   return (
     <div>
@@ -30,20 +29,26 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div>
-            <h2>Bobby Walsh</h2>
-            <h3>Full-Stack Developer</h3>
-            <p>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-orange-400 font-medium">Bobby Walsh</h2>
+            <h3 className="text-2xl py-2 text-amber-950">Full-Stack Developer</h3>
+            <p className="text-md py-5 leading-8 text-amber-950 te">
               I am a full-stack developer with a versatile skill set in front-end and back-end development. With
               expertise in multiple programming languages and frameworks, I can create and maintain the entire software
               stack of web applications, from captivating user interfaces to robust server-side logic and seamless
               database integration.
             </p>
           </div>
-          <div>
-            <a href="https://twitter.com/CurrentlyBog"><AiFillTwitterCircle /></a>
-            <a href="https://www.linkedin.com/in/robert-walsh-461b58267/"><AiFillLinkedin /></a>
-            <a href="https://github.com/CurrentlyBob"><AiFillGithub /></a>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-amber-950">
+            <a href="https://twitter.com/CurrentlyBog">
+              <AiFillTwitterCircle />
+            </a>
+            <a href="https://www.linkedin.com/in/robert-walsh-461b58267/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/CurrentlyBob">
+              <AiFillGithub />
+            </a>
           </div>
         </section>
       </main>
