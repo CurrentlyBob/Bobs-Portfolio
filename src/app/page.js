@@ -1,6 +1,16 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import Image from 'next/image'
+import avatar from 'src/public/avatar.png.png'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
+import web1 from '../public/web1.png'
+import web2 from '../public/web2.png'
+import web3 from '../public/web3.png'
+
+
 
 export default function Home() {
   return (
@@ -11,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-orange-100 px-10">
+      <main className="bg-orange-100 px-10 md:px-20 lg:px-40">
         <section className=" bg-amber-100 min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Developed By Bobby Walsh</h1>
@@ -30,9 +40,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-orange-400 font-medium">Bobby Walsh</h2>
-            <h3 className="text-2xl py-2 text-amber-950">Full-Stack Developer</h3>
-            <p className="text-md py-5 leading-8 text-amber-950 te">
+            <h2 className="text-5xl py-2 text-orange-400 font-medium md:text-6xl">Bobby Walsh</h2>
+            <h3 className="text-2xl py-2 text-amber-950 md:text-3xl">Full-Stack Developer</h3>
+            <p className="text-md py-5 leading-8 text-amber-950 md:text-xl max-w-xl mx-auto">
               I am a full-stack developer with a versatile skill set in front-end and back-end development. With
               expertise in multiple programming languages and frameworks, I can create and maintain the entire software
               stack of web applications, from captivating user interfaces to robust server-side logic and seamless
@@ -50,6 +60,77 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
+          <div className="relative mx-auto bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
+            <Image src={avatar} alt="avatar" fill={true} object-fit="cover" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 text-orange-500">About Me</h3>
+            <p className="text-md py-2 leading-8 text-amber-950 md:text-lg max-w mx-auto">
+              Hello! I'm Bobby, a software engineer driven by a passion for learning and problem-solving. I recently
+              graduated from General Assembly's Software Engineering Immersive program after completing my Bachelor's
+              degree in Psychology. Previously, I worked briefly as a Child Protective Services investigator, but I felt
+              out of place and sought a more enticing career that aligned with my thirst for knowledge. That's when I
+              decided to pivot into software engineering. Through the immersive program, I gained a strong foundation in
+              programming languages and frameworks, enabling me to bring ideas to life and develop impactful software
+              solutions. I thrive in collaborative environments, continuously seek growth, and stay up-to-date with
+              industry trends. I'm eager to contribute my skills to innovative projects and make a positive impact in
+              the field. Let's connect and explore opportunities together!.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="flex justify-center">
+                <Image src={design} alt="design-image" width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-orange-500">My work</h3>
+              <p className="py-2">Creating sick work for you</p>
+              <h4 className="py-4 text-orange-600">Tools 4 work</h4>
+              <p className="text-amber-950 py-1">HTML5</p>
+              <p className="text-amber-950 py-1">CSS</p>
+              <p className="text-amber-950 py-1">JavaScript</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="flex justify-center">
+                <Image src={code} alt="code-image" width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-orange-500">My work</h3>
+              <p className="py-2">Creating sick work for you</p>
+              <h4 className="py-4 text-orange-600">Tools 4 work</h4>
+              <p className="text-amber-950 py-1">HTML5</p>
+              <p className="text-amber-950 py-1">CSS</p>
+              <p className="text-amber-950 py-1">JavaScript</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="flex justify-center">
+                <Image src={consulting} alt="design-image" width={100} height={100} />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-orange-500">My work</h3>
+              <p className="py-2">Creating sick work for you</p>
+              <h4 className="py-4 text-orange-600">Tools 4 work</h4>
+              <p className="text-amber-950 py-1">HTML5</p>
+              <p className="text-amber-950 py-1">CSS</p>
+              <p className="text-amber-950 py-1">JavaScript</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+          </div>
+          <p className="text-md py-2 leading-8 text-amber-950">
+             Portfolio Intro
+            </p>
+            <div>
+              <div><Image src={web1} alt="web1"  /></div>
+            </div>
+            <div>
+              <div><Image src={web2} alt="web2" /></div>
+            </div>
+            <div>
+              <div><Image src={web3} alt="web3" /></div>
+            </div>
         </section>
       </main>
     </div>
