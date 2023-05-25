@@ -10,8 +10,6 @@ import web1 from '../public/web1.png'
 import web2 from '../public/web2.png'
 import web3 from '../public/web3.png'
 
-
-
 export default function Home() {
   return (
     <div>
@@ -117,20 +115,24 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
+            <h3 className="text-3xl py-1">Portfolio</h3>
           </div>
-          <p className="text-md py-2 leading-8 text-amber-950">
-             Portfolio Intro
-            </p>
+          <p className="text-md py-2 leading-8 text-amber-950">Portfolio Intro</p>
+          <div>
             <div>
-              <div><Image src={web1} alt="web1"  /></div>
+              <Image src={web1} alt="web1" />
             </div>
+          </div>
+          <div>
             <div>
-              <div><Image src={web2} alt="web2" /></div>
+              <Image src={web2} alt="web2" />
             </div>
+          </div>
+          <div>
             <div>
-              <div><Image src={web3} alt="web3" /></div>
+              <Image src={web3} alt="web3" />
             </div>
+          </div>
         </section>
       </main>
     </div>
