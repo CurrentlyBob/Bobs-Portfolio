@@ -30,7 +30,9 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://www.linkedin.com/in/robert-walsh-461b58267/"
+                  href="https://www.linkedin.com/in/bobbydwalsh/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   LinkedIn
                 </a>
@@ -48,17 +50,17 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-amber-950">
-            <a href="https://twitter.com/CurrentlyBog">
+            <a href="https://twitter.com/CurrentlyBog" target="_blank" rel="noreferrer">
               <AiFillTwitterCircle />
             </a>
-            <a href="https://www.linkedin.com/in/robert-walsh-461b58267/">
+            <a href="https://www.linkedin.com/in/bobbydwalsh/" target="_blank" rel="noreferrer">
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/CurrentlyBob">
+            <a href="https://github.com/CurrentlyBob" target="_blank" rel="noreferrer">
               <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
+          <div className="relative mx-auto bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={avatar} alt="avatar" fill={true} object-fit="cover" />
           </div>
         </section>
@@ -77,7 +79,7 @@ export default function Home() {
               the field. Let's connect and explore opportunities together!.
             </p>
           </div>
-          <div>
+          <div className="lg:flex gap-10 justify-center">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <div className="flex justify-center">
                 <Image src={design} alt="design-image" width={100} height={100} />
@@ -117,20 +119,30 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Portfolio</h3>
           </div>
-          <p className="text-md py-2 leading-8 text-amber-950">Portfolio Intro</p>
-          <div>
-            <div>
-              <Image src={web1} alt="web1" />
+          <p className="text-md py-2 leading-8 text-amber-950">
+            Welcome to my portfolio showcasing a variety of web projects. Each project incorporates{' '}
+            <span className="text-orange-600">JavaScript</span> and <span className="text-orange-600">CSS</span> to
+            create dynamic and stylish web experiences. Additionally, I utilized the following technologies in specific
+            projects:
+            <span className="text-orange-600">React</span>, <span className="text-orange-600">Bootstrap</span>,{' '}
+            <span className="text-orange-600">MongoDB</span>, <span className="text-orange-600">Express</span>,{' '}
+            <span className="text-orange-600">Mongoose</span>, and <span className="text-orange-600">Node</span>.
+          </p>
+          <div className="flex flec-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className='basis-1/3 flex-1 '>
+              <Image src={web1} alt="web1" className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-          </div>
-          <div>
-            <div>
-              <Image src={web2} alt="web2" />
+
+            <div className='basis-1/3 flex-1 '>
+              <Image src={web2} alt="web2" className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-          </div>
-          <div>
-            <div>
-              <Image src={web3} alt="web3" />
+
+            <div className='basis-1/3 flex-1 '>
+              <Image src={web3} alt="web3" className='rounded-lg object-cover' width={'100%'} height={'100%'} position={'relative'}  />
+            </div>
+
+            <div className='basis-1/3 flex-1 '>
+              <Image src={web3} alt="web3" className='rounded-lg object-cover' width={'100%'} height={'100%'} position={'relative'}  />
             </div>
           </div>
         </section>
