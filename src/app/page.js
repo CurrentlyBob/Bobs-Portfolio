@@ -23,9 +23,9 @@ import {
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import Image from 'next/image'
 import avatar from 'src/public/avatar.png.png'
-import design from '../public/design.png'
-import code from '../public/code.png'
-import consulting from '../public/consulting.png'
+import psychology from '../public/psychology-png.png'
+import coding from '../public/coding.png'
+import learn from '../public/learn.png'
 import web1 from '../public/web1.png'
 import web2 from '../public/web2.png'
 import web3 from '../public/web3.png'
@@ -80,7 +80,7 @@ export default function Home() {
               in the field. Let's connect and explore opportunities together!
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 dark:text-gray-100 text-amber-950'>
+          <div className='text-5xl flex justify-center gap-16 py-3 dark:text-gray-100'>
             <a href="https://twitter.com/CurrentlyBog" target="_blank" rel="noreferrer">
               <AiFillTwitterCircle />
             </a>
@@ -117,44 +117,44 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:flex gap-10 justify-center">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px]">
               <div className="flex justify-center">
-                <Image src={design} alt="design-image" width={100} height={100} />
+                <Image src={psychology} alt="psych-image" width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500'>
-                My work
+              User-Centered Design
               </h3>
-              <p className="py-2 dark: text-gray-400">Creating sick work for you</p>
-              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Tools 4 work</h4>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>HTML5</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>CSS</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>JavaScript</p>
+              <p className="py-2 dark: text-gray-400">Applying psychology principles to create intuitive and user-friendly digital experiences</p>
+              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Specializations</h4>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Cognitive Psychology</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Behavioral Analysis</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Usability Testing</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px]">
               <div className="flex justify-center">
-                <Image src={code} alt="code-image" width={100} height={100} />
+                <Image src={coding} alt="code-image" width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500'>
-                My work
+              Software Craftsmanship
               </h3>
-              <p className="py-2 dark: text-gray-400">Creating sick work for you</p>
-              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Tools 4 work</h4>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>HTML5</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>CSS</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>JavaScript</p>
+              <p className="py-2 dark: text-gray-400">Transforming ideas into functional software solutions through elegant coding practices</p>
+              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Specializations</h4>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Quality Assurance</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Backend Engineering</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Agile Development</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px]">
               <div className="flex justify-center">
-                <Image src={consulting} alt="design-image" width={100} height={100} />
+                <Image src={learn} alt="learn-image" width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500'>
-                My work
+              Learning Enthusiast
               </h3>
-              <p className="py-2 dark: text-gray-400">Creating sick work for you</p>
-              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Tools 4 work</h4>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>HTML5</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>CSS</p>
-              <p className='py-1 dark:text-gray-300 text-amber-950'>JavaScript</p>
+              <p className="py-2 dark: text-gray-400">Quickly adapting to new technologies, my passion for staying ahead drives my professional growth</p>
+              <h4 className='py-4 dark:text-gray-100 text-orange-600'>Specializations</h4>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Adaptive Problem Solving</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Continuous Learning</p>
+              <p className='py-1 dark:text-gray-300 text-amber-950'>Collaborative Innovation</p>
             </div>
           </div>
         </section>
