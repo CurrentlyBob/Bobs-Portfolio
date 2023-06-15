@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write . --ignore-path .gitignore"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",

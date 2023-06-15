@@ -24,10 +24,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { PROJECTS } from '../projects'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
+import AttributeCard from '@/components/Attribute/AttributeCard'
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
-
-
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -84,13 +83,14 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image 
-              src="/avatar.png" 
-              alt="avatar" 
+            <Image
+              src="/avatar.png"
+              alt="avatar"
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: '100%', height: 'auto' }} />
+              style={{ width: '100%', height: 'auto' }}
+            />
           </div>
         </section>
         <section>
@@ -115,47 +115,27 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:flex gap-10 justify-center">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px] bg-gray-300">
-              <div className="flex justify-center">
-                <Image src="/psychology.png" alt="psych-image" width={100} height={100} />
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500">User-Centered Design</h3>
-              <p className="py-2 dark: text-gray-400">
-                Applying psychology principles to create intuitive and user-friendly digital experiences
-              </p>
-              <h4 className="py-4 dark:text-gray-100 text-orange-600">Specializations</h4>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Cognitive Psychology</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Behavioral Analysis</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Usability Testing</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px]">
-              <div className="flex justify-center">
-                <Image src="/coding.png" alt="code-image" width={100} height={100} />
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500">
-                Software Craftsmanship
-              </h3>
-              <p className="py-2 dark: text-gray-400">
-                Transforming ideas into functional software solutions through elegant coding practices
-              </p>
-              <h4 className="py-4 dark:text-gray-100 text-orange-600">Specializations</h4>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Quality Assurance</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Backend Engineering</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Agile Development</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px]">
-              <div className="flex justify-center">
-                <Image src="/learn.png" alt="learn-image" width={100} height={100} />
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100 text-orange-500">Learning Enthusiast</h3>
-              <p className="py-2 dark: text-gray-400">
-                Quickly adapting to new technologies, my passion for staying ahead drives my professional growth
-              </p>
-              <h4 className="py-4 dark:text-gray-100 text-orange-600">Specializations</h4>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Adaptive Problem Solving</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Continuous Learning</p>
-              <p className="py-1 dark:text-gray-300 text-amber-950">Collaborative Innovation</p>
-            </div>
+            <AttributeCard
+              imageSrc="/psychology.png"
+              altText="psych-image"
+              title="User-Centered Design"
+              description="Applying psychology principles to create intuitive and user-friendly digital experiences"
+              specializations={['Cognitive Psychology', 'Behavioral Analysis', 'Usability Testing']}
+            />
+            <AttributeCard
+              imageSrc="/coding.png"
+              altText="code-image"
+              title="Software Craftsmanship"
+              description="Transforming ideas into functional software solutions through elegant coding practices"
+              specializations={['Quality Assurance', 'Backend Engineering', 'Agile Development']}
+            />
+            <AttributeCard
+              imageSrc="/learn.png"
+              altText="learn-image"
+              title="Learning Enthusiast"
+              description="Quickly adapting to new technologies, my passion for staying ahead drives my professional growth"
+              specializations={['Adaptive Problem Solving', 'Continuous Learning', 'Collaborative Innovation']}
+            />
           </div>
         </section>
         <section>
