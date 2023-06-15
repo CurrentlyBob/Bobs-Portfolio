@@ -18,7 +18,7 @@ const ProjectCard = ({ imageUrl, imageAlt, gitHubLink, deployLink }) => {
           href={gitHubLink}
           target="_blank"
           rel="noreferrer"
-          className="flex row bg-orange-500 py-2 px-4 ounded-lg text-white justify-center items-center shadow-sm hover:bg-orange-800 transition-all"
+          className="flex row bg-yellow-50 py-2 px-4 ounded-lg  justify-center items-center shadow-md hover:bg-yellow-100 transition-all rounded-lg dark:bg-gray-200 dark:hover:bg-gray-600"
         >
           <FaGithub className="mr-2" />
           Github
@@ -27,7 +27,7 @@ const ProjectCard = ({ imageUrl, imageAlt, gitHubLink, deployLink }) => {
           href={deployLink}
           target="_blank"
           rel="noreferrer"
-          className="flex row bg-orange-500 py-2 px-4 rounded-lg text-white justify-center items-center shadow-sm hover:bg-orange-800 transition-all"
+          className="flex row bg-yellow-50 py-2 px-4 rounded-lg justify-center items-center shadow-md hover:bg-yellow-100 transition-all dark:bg-gray-200 dark:hover:bg-gray-600"
         >
           <FaExternalLinkAlt className="mr-2" />
           Deployed Site

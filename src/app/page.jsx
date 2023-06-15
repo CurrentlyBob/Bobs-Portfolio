@@ -19,6 +19,7 @@ import {
   SiVite,
   SiNextdotjs,
   SiSequelize,
+  SiMui,
 } from 'react-icons/si'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -36,18 +37,21 @@ export default function Home() {
         <link rel="icon" href="/avatar.png" />
       </Head>
 
-      <main className="bg-orange-100 dark:bg-gray-900 px-10 md:px-20 lg:px-40 ">
-        <section className="bg-amber-100 dark:bg-gray-800 min-h-screen ">
+      <main className="bg-orange-100 dark:bg-gray-900 px-10 md:px-20 lg:px-40 p-3 ">
+        <section className="bg-yellow-50 dark:bg-gray-800 min-h-screen rounded-xl p-4 shadow-lg">
           <nav className="py-10 mb-12 flex justify-between px-10">
-            <h1 className="text-xl font-burtons dark:text-gray-300">Developed By Bobby Walsh</h1>
+            <h1 className="text-xl dark:text-gray-300">Developed By Bobby Walsh</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-xl" />
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-xl dark:text-gray-300"
+                />
               </li>
               <li>
                 <Link
-                  className="transition-all bg-orange-500 hover:bg-orange-800 text-white px-4 py-2 rounded-md ml-8 
-                    dark:from-gray-400 dark:to-gray-600"
+                  className="transition-all bg-orange-300 hover:bg-orange-500  px-4 py-2 rounded-md ml-8 
+                    dark:bg-gray-200 dark:hover:bg-gray-600"
                   href="/Documents/resume.pdf"
                   download
                 >
@@ -94,24 +98,25 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-gray-100 text-orange-500">Skills</h3>
-            <div className="flex flex-wrap gap-4">
-              <SiTypescript size={48} />
-              <SiPostgresql size={48} />
-              <SiExpress size={48} />
-              <SiReact size={48} />
-              <SiNodedotjs size={48} />
-              <SiMongodb size={48} />
-              <SiJavascript size={48} />
-              <SiHtml5 size={48} />
-              <SiCss3 size={48} />
-              <SiGit size={48} />
-              <SiTailwindcss size={48} />
-              <SiBootstrap size={48} />
-              <SiVite size={48} />
-              <SiNextdotjs size={48} />
-              <SiSequelize size={48} />
+          <div className="my-5">
+            <h3 className="text-3xl py-2 dark:text-gray-100 text-orange-500">Skills</h3>
+            <div className="grid gap-4 justify-center grid-rows-2 grid-flow-col">
+              <SiTypescript size={48} className="text-typeScript" />
+              <SiPostgresql size={48} className="text-postgre" />
+              <SiExpress size={48} className="dark:text-white" />
+              <SiReact size={48} className="text-react" />
+              <SiNodedotjs size={48} className="text-nodeJs" />
+              <SiMongodb size={48} className="text-mongo" />
+              <SiJavascript size={48} className="text-js" />
+              <SiHtml5 size={48} className="text-html" />
+              <SiCss3 size={48} className="text-css" />
+              <SiGit size={48} className="text-git" />
+              <SiTailwindcss size={48} className="text-tailwind" />
+              <SiBootstrap size={48} className="text-bootstrap" />
+              <SiVite size={48} className="text-vite" />
+              <SiNextdotjs size={48} className="dark:text-white" />
+              <SiSequelize size={48} className="text-sequel" />
+              <SiMui size={48} className="text-mui" />
             </div>
           </div>
           <div className="lg:flex gap-10 justify-center">
@@ -140,18 +145,19 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
+            <h3 className="text-3xl py-1 text-orange-500 dark:text-gray-300">Portfolio</h3>
           </div>
           <p className="text-md py-2 leading-8 text-amber-950 dark:text-gray-100">
             Welcome to my portfolio showcasing a variety of web projects. Each project incorporates
-            <span className="text-orange-600 dark:text-gray-400">JavaScript</span> and
-            <span className="text-orange-600 dark:text-gray-400">CSS</span> to create dynamic and stylish web
+            <span className="text-orange-600 dark:text-gray-400"> JavaScript</span> and
+            <span className="text-orange-600 dark:text-gray-400"> CSS</span> to create dynamic and stylish web
             experiences. Additionally, I utilized the following technologies in specific projects:
-            <span className="text-orange-600 dark:text-gray-400">React</span>,
-            <span className="text-orange-600 dark:text-gray-400">Bootstrap</span>,
-            <span className="text-orange-600 dark:text-gray-400">MongoDB</span>,
-            <span className="text-orange-600 dark:text-gray-400">Express</span>,
-            <span className="text-orange-600 dark:text-gray-400">Mongoose</span>, and
+            <span className="text-orange-600 dark:text-gray-400"> React</span>,
+            <span className="text-orange-600 dark:text-gray-400"> Bootstrap</span>,
+            <span className="text-orange-600 dark:text-gray-400"> Tailwind</span>,
+            <span className="text-orange-600 dark:text-gray-400"> MongoDB</span>,
+            <span className="text-orange-600 dark:text-gray-400"> Express</span>,
+            <span className="text-orange-600 dark:text-gray-400"> Mongoose</span>, and
             <span className="text-orange-600 dark:text-gray-400"> Node</span>.
           </p>
           <div className="flex flec-col gap-10 py-10 lg:flex-row lg:flex-wrap">

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const AttributeCard = ({ imageSrc, altText, title, description, specializations }) => (
-  <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px] bg-gray-300">
+  <div className="text-center shadow-lg p-10 rounded-xl my-10 w-[600px] bg-yellow-50 dark:bg-gray-800">
     <div className="flex justify-center">
       <Image src={imageSrc} alt={altText} width={100} height={100} />
     </div>
